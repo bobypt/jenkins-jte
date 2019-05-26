@@ -9,5 +9,4 @@ libraries{
   gradle
   sonarqube
   notify
-  log
 }
