@@ -1,3 +1,5 @@
+echo "INIT LOGGGGGG"
+
 def info(message) {
     echo "INFO: ${message}"
 }
