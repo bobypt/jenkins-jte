@@ -1,19 +1,13 @@
 node {
     stage('Build') {
-        steps {
-            build()
-        }
+        build()
     }
 
     stage('Test') {
-        steps {
-            unit_test()
-        }
+        unit_test()
     }
 
     stage('SCA') {
-        steps {
-            static_code_analysis()
-        }
+        static_code_analysis()
     }                
 }
