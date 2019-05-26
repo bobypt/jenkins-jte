@@ -27,7 +27,7 @@ COPY job_builder/bootstrap.sh /jenkins/
 
 
 
-RUN /usr/local/bin/install-plugins.sh git mstest matrix-auth workflow-aggregator docker-workflow blueocean credentials-binding templating-engine ws-cleanup
+RUN /usr/local/bin/install-plugins.sh git mstest matrix-auth workflow-aggregator docker-workflow blueocean credentials-binding templating-engine ws-cleanup pipeline-model-definition
 
 ENV JENKINS_USER admin
 ENV JENKINS_PASS admin
