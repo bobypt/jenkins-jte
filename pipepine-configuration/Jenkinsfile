@@ -1,3 +1,22 @@
-unit_test()
-build()
-static_code_analysis()
+pipeline {
+    agent any
+    stages {
+        stage('Build') {
+            steps {
+                build()
+            }
+        }
+
+        stage('Test') {
+            steps {
+                unit_test()
+            }
+        }
+
+        stage('SCA') {
+            steps {
+                static_code_analysis()
+            }
+        }                
+    }
+}
