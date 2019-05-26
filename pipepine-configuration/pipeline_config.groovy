@@ -8,4 +8,5 @@ libraries{
   merge = true 
   gradle
   sonarqube
+  notify
 }

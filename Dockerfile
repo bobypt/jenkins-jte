@@ -26,7 +26,7 @@ COPY job_builder/jobs /jenkins/jobs/
 COPY job_builder/bootstrap.sh /jenkins/
 
 
-RUN /usr/local/bin/install-plugins.sh git mstest matrix-auth workflow-aggregator docker-workflow blueocean credentials-binding templating-engine ws-cleanup pipeline-model-definition
+RUN /usr/local/bin/install-plugins.sh git mstest matrix-auth workflow-aggregator docker-workflow blueocean credentials-binding templating-engine ws-cleanup pipeline-model-definition filesystem_scm
 
 ENV JENKINS_USER admin
 ENV JENKINS_PASS admin

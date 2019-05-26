@@ -1,6 +1,12 @@
 # jenkins-jte
 
-Bootstrap all jobs
+## Start Jenkins server
+```
+docker-compose build
+docker-compose up
+```
+
+## Bootstrap all jobs
 ```
 docker exec -it -u root jenkins-master  /jenkins/bootstrap.sh
 ```

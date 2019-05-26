@@ -1,5 +1,6 @@
 node {
     stage('Build') {
+        //log.info 'Helloooo'
         build()
     }
 
