@@ -1,6 +1,7 @@
 - job:
     name: test_job
     description: 'Automatically generated test'
-    project-type: freestyle
-    builders:
-      - shell: 'ls'
+    project-type: multibranch-defaults
+    scm:
+        - github:
+            repo: 'https://github.com/bobypt/jenkins-jte.git'
